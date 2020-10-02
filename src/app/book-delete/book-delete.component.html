@@ -1,0 +1,16 @@
+<div class="container-xl">
+  <h2 style="color: olivedrab">Delete Book</h2>
+  <p>Title:
+    <i>{{book.title}}</i>
+  </p>
+  <p>
+    Author:
+    <i>{{book.author}}</i>
+  </p>
+  <p class="text-justify">
+    Description: <br>
+    <i>{{book.description}}</i>
+  </p>
+  <button type="button" class="btn btn-outline-danger mr-2 ml-2" (click)="deleteBook()">Delete</button>
+  <a [routerLink]="'/books'" class="btn btn-outline-info mr-2 ml-2">Back</a>
+</div>

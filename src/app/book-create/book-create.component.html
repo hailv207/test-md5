@@ -1,0 +1,19 @@
+<div class="container-xl">
+  <h2 style="color: olivedrab">Add new book</h2>
+  <form [formGroup]="formGroup" (ngSubmit)="createBook()">
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input class="form-control" formControlName="title" type="text" name="title" id="title" placeholder="Enter title">
+    </div>
+    <div class="form-group">
+      <label for="author">Author</label>
+      <input class="form-control" formControlName="author" type="text" name="author" id="author" placeholder="Enter author">
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      <input class="form-control" formControlName="description" type="text" name="description" id="description" placeholder="Enter description">
+    </div>
+    <input type="submit" value="Add" class="btn btn-outline-primary mr-2 ml-2">
+    <a [routerLink]="'/books'" class="btn btn-outline-info">Back</a>
+  </form>
+</div>
